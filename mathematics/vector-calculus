@@ -43,14 +43,44 @@ Div = 0 - Solenoidal = Incompressible
  
 ### Curl
 $$ \nabla \times \underline{f} $$
+
 Vector Operator -> Vector
+
+$$
+\nabla \times \underline{f}
+=
+\begin{vmatrix}
+\hat{i} & \hat{j} & \hat{k} \\
+\frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\
+f_{x} & f_{y} & f_{z}
+\end{vmatrix}
+$$
 
 Curl = 0 - Conservative = Irrotational
 
 ### Laplacian
-$$ \nabla^{2}f $$
-$$ \nabla \cdot (\nabla f) $$
+$$ \nabla^{2}f = \nabla \cdot (\nabla f) = (\nabla \cdot \nabla) f $$
+
+$$ \nabla^{2} = \nabla \cdot \nabla
+= \begin{pmatrix}
+\frac{\partial}{\partial x} \\
+\frac{\partial}{\partial y} \\
+\frac{\partial}{\partial z} \\
+\end{pmatrix} \cdot \begin{pmatrix}
+\frac{\partial}{\partial x} \\
+\frac{\partial}{\partial y} \\
+\frac{\partial}{\partial z} \\
+\end{pmatrix}
+= \begin{pmatrix}
+\frac{\partial^{2}}{\partial x^{2}} +
+\frac{\partial^{2}}{\partial y^{2}} +
+\frac{\partial^{2}}{\partial z^{2}}
+\end{pmatrix} $$
 $$ \nabla^{2} f = \begin{pmatrix}
+\frac{\partial^{2}}{\partial x^{2}} +
+\frac{\partial^{2}}{\partial y^{2}} +
+\frac{\partial^{2}}{\partial z^{2}}
+\end{pmatrix} f = \begin{pmatrix}
 \frac{\partial^{2} f}{\partial x^{2}} +
 \frac{\partial^{2} f}{\partial y^{2}} +
 \frac{\partial^{2} f}{\partial z^{2}}
@@ -61,10 +91,13 @@ Scalar Operator -> Scalar
 ## Differentiation
 $$ $$ 
 
-## Vector vs Scalar Potential
+## Potentials
+
+If $ \nabla \times \underline{f} = 0 $ then there exists a **scalar potential** $ \phi $ such that $ \underline{f} = \nabla \phi $
+
+If $ \nabla \cdot \underline{f} = 0 $ then there exists a **vector potential** $ \underline{\psi} $ such that $ \underline{f} = \nabla \times \underline{\psi} $
 
 ## Gauss and Stokes Theorem
-
 
 
 
