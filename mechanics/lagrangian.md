@@ -56,7 +56,7 @@ Calculate the eigenvalues $ \omega_{i} $ of $ K - M \omega_{i}^{2} $
 $$ det(K - M \omega_{i}^{2}) = 0 $$
 
 #### Normal Modes $ \underline{x} $
-Calculate the eigenvector of $ K - M \omega_{i}^{2} $ for each eigenvalue $ \omega_{i} $ (ie. all the eigenvectors)
+Calculate the eigenvector $ \underline{x} $ of $ K - M \omega_{i}^{2} $ for each eigenvalue $ \omega_{i} $ (ie. all the eigenvectors)
 $$ (K - M \omega_{i}^{2}) \underline{x} = \underline{0} $$
 
 
