@@ -15,8 +15,8 @@ $ j = Joints $ - Number of Joints
 $$
 \underline{t} = \underline{t_{0}} + \sum_{i=0}^{n} x_{i}\underline{s_{i}} \quad (n = \text{Num of Redundancies})
 $$
-$ \underline{t_{0}} $ - $ \text{Applied loads} $ with $ \text{redundant bars} = 0 \quad $ - Particular Solution </br>
-$ \underline{s_{i}} $ - $ \text{Self-Stress (No loads) } $ where $ \text{redundant bar}_{i} = 1 $ and $ \text{other redundant bars} = 0 \quad $ - Homogenous Solution </br>
+$ \underline{t_{0}} $ - $ \text{Tensions with applied loads} $ with $ \text{redundant bars} = 0 \quad $ - Particular Solution </br>
+$ \underline{s_{i}} $ - $ \text{Self-Stress (Tensions with no loads) } $ where $ \text{redundant bar}_{i} = 1 $ and $ \text{other redundant bars} = 0 \quad $ - Homogenous Solution </br>
 
 ### Flexibility Matrix
 In the truss case, the flexibility matrix is a diagonal matrix.
@@ -41,15 +41,20 @@ Note that if a truss has pre-stress (ie. pre-extension), then the modified equat
 
 $$ \underline{e} = \underline{f} \circ \underline{t} + \underline{e_{0}} $$
 
-### Tension Calculation
+### Tensions & Extensions Calculation
 We can now use virtual work to calculate the values of $ x_{i} $ which we will then use to calculate the tensions.
 </br>
 The virtual work equation simplifies down to the following:
 $$ \underline{s_{i}} \cdot \underline{e} = 0 $$ 
 
- We can use the above equation for each $ \underline{s_{i}} $ to find each $ x_{i} $ which we can then substitute into $ \underline{t} $ to find the values of tensions for each of the bars.
+ We can use the above equation for each $ \underline{s_{i}} $ to find each $ x_{i} $ which we can then substitute into $ \underline{t} $ and $ \underline{e} $ to find the values of tensions and extensions for each of the bars.
 
 ### Point Displacement at Applied Loads
-$$ \underline{P}^{*} \cdot \underline{\delta} =\underline{t}^{*} \cdot \underline{e} $$
+$$ \delta = \underline{t}^{*} \cdot \underline{e} $$
 
-$ \underline{P}^{*} \text{ = } \underline{1} $
+$ \underline{t}^{*} $ are the virtual tensions where the load is set to 1.
+
+Now assume we have 2 orthognal loads V and H applied at a point of a truss. Then we need to adapt the above to the following equations by the principle of superposition:
+$$ \delta_{V} = \underline{t}^{*}_{(V,H) = (1,0)} \cdot \underline{e} $$
+$$ \delta_{H} = \underline{t}^{*}_{(V,H) = (0,1)} \cdot \underline{e} $$
+
