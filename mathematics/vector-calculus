@@ -1,1 +1,71 @@
+# Vector Calculus
+
+## Introduction
+A field is 
+
+### Scalar Field
+A scalar field is a function of a space whose value at each point is a scalar quantity (ie. magnitude only).
+
+Examples:
+Height Map, Temperature Map
+
+### Vector Field
+A vector field is a function of a space whose value at each point is a vector quantity (ie. direction and magnitude).
+
+Examples:
+Wind Map
+
+
+
+## Basics
+For ease of understanding, it is first easiest to understand vector calculus in cartesian coordinates. Consider for now that $ \nabla $ is the vector operator:
+
+$$ \nabla = \begin{pmatrix}
+\frac{\partial}{\partial x} \\
+\frac{\partial}{\partial y} \\
+\frac{\partial}{\partial z} \\
+\end{pmatrix} $$
+
+### Gradient
+$$ \nabla f $$
+$$ \nabla f = \begin{pmatrix}
+\frac{\partial f}{\partial x} \\
+\frac{\partial f}{\partial y} \\
+\frac{\partial f}{\partial z}
+\end{pmatrix} $$
+Vector Operator -> Vector
+
+### Divergence
+$$ \nabla \cdot \underline{f} $$
+Scalar Operator -> Scalar
+
+Div = 0 - Solenoidal = Incompressible 
+ 
+### Curl
+$$ \nabla \times \underline{f} $$
+Vector Operator -> Vector
+
+Curl = 0 - Conservative = Irrotational
+
+### Laplacian
+$$ \nabla^{2}f $$
+$$ \nabla \cdot (\nabla f) $$
+$$ \nabla^{2} f = \begin{pmatrix}
+\frac{\partial^{2} f}{\partial x^{2}} +
+\frac{\partial^{2} f}{\partial y^{2}} +
+\frac{\partial^{2} f}{\partial z^{2}}
+\end{pmatrix} $$
+
+Scalar Operator -> Scalar
+
+## Differentiation
+$$ $$ 
+
+## Vector vs Scalar Potential
+
+## Gauss and Stokes Theorem
+
+
+
+
 
