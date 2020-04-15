@@ -60,4 +60,17 @@ Calculate the eigenvector $ \underline{x} $ of $ K - M \omega_{i}^{2} $ for each
 $$ (K - M \omega_{i}^{2}) \underline{x} = \underline{0} $$
 
 
+## Stability
+
+### Equilibrium Points
+$ \dfrac{dV}{dt} = 0 $
+
+#### Stability Criteria
+$ \dfrac{d^{2}V}{dt^{2}} > 0 \therefore Minimum \therefore Stable $
+$ \dfrac{d^{2}V}{dt^{2}} < 0 \therefore Maximum \therefore Unstable $
+
+### Phase Portrait
+
+
+</br></br>
 
