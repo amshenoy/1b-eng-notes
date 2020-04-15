@@ -91,6 +91,7 @@ Every path in the phase portrait represents the trajectory that the system will 
 All equilibrium points must be some sort of convergence/divergence.
 
 A convergence represents a stable equilibrium point.
+</br>
 A divergence represents an unstable equilibrium point.
 
 There are many different ways a system can have equilibrium points:
@@ -103,6 +104,7 @@ There are many different ways a system can have equilibrium points:
 * Converging Spiral - Stable
 * Diverging Spiral - Unstable
 
-A closed curve is periodic and hence be considered as an equilibrium path (non-diverging).
+A closed curve is periodic and hence can be considered as an equilibrium path (non-diverging).
  
 </br></br>
+
