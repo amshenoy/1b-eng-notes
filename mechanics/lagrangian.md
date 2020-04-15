@@ -66,8 +66,8 @@ $$ (K - M \omega_{i}^{2}) \underline{x} = \underline{0} $$
 $ \dfrac{dV}{dt} = 0 $
 
 #### Stability Criteria
-$ \dfrac{d^{2}V}{dt^{2}} > 0 \therefore Minimum \therefore Stable $
-$ \dfrac{d^{2}V}{dt^{2}} < 0 \therefore Maximum \therefore Unstable $
+$$ \dfrac{d^{2}V}{dt^{2}} > 0 \quad \therefore Minimum \quad \therefore Stable $$
+$$ \dfrac{d^{2}V}{dt^{2}} < 0 \quad \therefore Maximum \quad \therefore Unstable $$
 
 ### Phase Portrait
 
