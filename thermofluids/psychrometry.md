@@ -1,7 +1,5 @@
 # Psychrometry
 
-# Psychrometry
-
 ## Gas Mixtures
 
 State Properties ($ P, V $) - Moles Scaled
