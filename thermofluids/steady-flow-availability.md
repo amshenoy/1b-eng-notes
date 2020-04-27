@@ -30,6 +30,12 @@ $$ \qquad b_{2} - b_{1} = (h_{2}- h_{1}) - T_{0} (s_{2} - s_{1}) $$
 $$
 
 ### Model Examples for Analysis
+
+#### Revision of Principles
+$$ \text{Isentropic Compression/Expansion} \quad \dfrac{T_{2}}{T_{1}} = ( \dfrac{P_{2}}{P_{1}} ) ^ {\dfrac {\gamma}{\gamma - 1}} $$ 
+$$ \text{Efficiency} \quad \eta = \dfrac{\dot{W}_{T_{\text{real}}}}{\dot{W}_{T_{\text{ideal}}}} = \dfrac{\dot{W}_{C_{\text{ideal}}}}{\dot{W}_{C_{\text{real}}}} $$
+$$ \text{Power} \quad \dot{W}_{T_{\text{ideal}}} = \dot{m} (c_{p}(T_{3}- T_{4})) \quad \dot{W}_{C_{\text{ideal}}} = \dot{m} (c_{p}(T_{2}- T_{1})) $$
+
 </br>
 
 #### Gas Turbine
@@ -48,4 +54,7 @@ $ \dot{W_{x}} = \dot{W_{T}} - \dot{W_{C}} $
 $ P_{5} = P_{atm} $ </br>
 $ \dot{W_{T}} = \dot{W_{C}} \quad (\dot{W_{x}} = 0)$ </br>
 $ h_{4} = h_{5} + \frac{v_{5}^{2}}{2} \quad (\text{SFEE in nozzle}) $ 
+
+
+
 
