@@ -3,6 +3,19 @@
 ### Overview
 - **Steam Turbine** Cycle
 
+</br>
+
+### Working Fluids
+$
+\text{Total Volume} \qquad V = V_{f} + V_{g} \\
+\qquad\qquad \qquad\qquad mv = m_{f}v_{f} + m_{g}v_{g} \\
+\\~\\
+\text{Dryness Fraction} \qquad x = \dfrac{v-v_{f}}{v_{g}-v_{f}} = \dfrac{m_{g}}{\underbrace{m_{g}+m_{f}}_{m}}\\
+\qquad \qquad \qquad \qquad \qquad  = \dfrac{s-s_{f}}{s_{g}-s_{f}} = \dfrac{v-v_{f}}{v_{g}-v_{f}}
+
+
+$
+
 ### Cycle Processes
 
 State **1** - **Liquid** Saturated </br>
@@ -33,7 +46,7 @@ State **3** - **Vapour** Saturated
 
 </br><hr></br>
 
-#### Calculations
+### Calculations
 $ 
 
 \color{red}{v_{f1}} = \small \color{blue}{H_{2}O-\text{SAT-Table}_{v}\big[f\big]\Big(P_{1}\Big)}
@@ -79,5 +92,23 @@ $
 \\
 \text{Condenser} \qquad q_{41} = \color{red}{h_{1}} - \color{green}{h_{4}} \\
 $
+</br></br>
+$
+\text{Reheat Parameters} \\
+\color{red}{h_{5}} = \small \color{blue}{H_{2}O-\text{SAT-Table}_{h}\big[g]\Big(T_{5}\Big)}
+\\
+\color{green}{h_{6}} \text{ and } \color{purple}{h_{6s}} \Rightarrow \text{Same method as for } \color{green}{h_{4}} \text{ and } \color{purple}{h_{4s}}
+$
+</br></br>
 
+#### Efficiency
 
+$
+\eta_{\text{Thermal}} = \dfrac{w_{\text{net}}}{q_{\text{in}}} 
+\quad = \quad 
+\dfrac{w_{t} - w_{p}}{q_{23}} 
+\quad  \text{ or }  \quad 
+\dfrac{w_{t1} + w_{t2} - w_{p}}{q_{23} + q_{45}} (\text{in the reheat case})
+$
+
+##### Note*: Area inside cycle of T-s diagram = $ w_{net} $ 
