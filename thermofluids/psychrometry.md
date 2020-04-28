@@ -48,7 +48,7 @@ $ \omega = \dfrac{\overbrace{18}^{M_{r} \ H_{2}O}}{\underbrace{29}_{M_{r} \text{
 
 $ \phi = \dfrac{ P_{v} }{
 \\
-\underbrace{P_{v-sat}}_{ \color{blue}{H_{2}O-\text{Table}_{P}[g](T)}}
+\underbrace{P_{v-sat}}_{ \color{blue}{H_{2}O-\text{SAT-Table}_{P}[g](T)}}
 }  
 \qquad \Bigg(
 P_{v} = \dfrac{\omega}{\omega + \dfrac{M_{r \ v}}{M_{r \ a}}} \text{ and } P_{a} = \dfrac{\omega}{\omega + \dfrac{M_{r \ a}}{M_{r \ v}}} \Bigg)
