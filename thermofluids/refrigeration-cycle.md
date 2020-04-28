@@ -1,6 +1,7 @@
 ## Refrigeration Cycle / Heat Pump Cycle
 ### Overview
 - **Vapour Compression** Cycle
+- **Multi-phase** Process
 - Transfer heat to the higher temperature location
 - Use of **refrigerant** fluid (Consider R-134a) 
 
@@ -10,10 +11,10 @@
 State **1** - **Vapour** Saturated </br>
 State **3** - **Liquid** Saturated
 
-1-2 - Compression - Compressor </br>
-2-3 - Condensation - Condenser </br>
-3-4 - Expansion - Throttle </br>
-4-1 - Evaporation - Evaporator </br>
+**1-2** - Compression - **Compressor** </br>
+**2-3** - Condensation - **Condenser** </br>
+**3-4** - Expansion - **Throttle** </br>
+**4-1** - Evaporation - **Evaporator** </br>
 
 (Insert P-h diagram here)
 
