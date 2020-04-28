@@ -21,11 +21,11 @@ State **3** - **Liquid** Saturated
 $ 
 \text{Compressor} \qquad w_{c} = h_{2} - h_{1} \qquad \qquad \qquad \qquad h_{1} = \small \color{blue}{\text{R-134a}-\text{SAT-Table}_{h}\big[g\big]\Big(P_{1}\Big)} \\
 
-\text{Condenser} \qquad q_{32} = - q_{23} = - (h_{3} - h_{2}) \qquad \qquad h_{2} = \small \color{blue}{\text{R-134a}-\text{SH-Table}_{h}\big[T_{SH}\big]\Big(P_{2}\Big)} \\
+\text{Condenser} \qquad \quad q_{23} = h_{3} - h_{2} \qquad \qquad \qquad \quad h_{2} = \small \color{blue}{\text{R-134a}-\text{SH-Table}_{h}\big[T_{SH}\big]\Big(P_{2}\Big)} \\
 
 \text{Throttle} \qquad \qquad h_{4} = h_{3} \qquad \qquad \qquad \qquad \qquad h_{3} = \small \color{blue}{\text{R-134a}-\text{SAT-Table}_{h}\big[f\big]\Big(P_{3}\Big)} \\
 
-\text{Evaporator} \qquad + q_{41} = h_{1} - h_{4} \qquad \\
+\text{Evaporator} \qquad q_{41} = h_{1} - h_{4} \qquad \\
 $
 
 ### Coefficient of Performance (COP)
