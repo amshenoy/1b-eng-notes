@@ -7,8 +7,8 @@
 ### Cycle Process
 (Insert T-s Diagram here)
 
-State 1 - Vapour Saturated
-State 3 - Liquid Saturated
+State **1** - **Vapour** Saturated </br>
+State **3** - **Liquid** Saturated
 
 1-2 - Compression - Compressor </br>
 2-3 - Condensation - Condenser </br>
