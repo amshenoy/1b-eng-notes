@@ -20,6 +20,8 @@ Momentum &emsp; $ p = mv = \dfrac{h}{\lambda} = \hbar \ k $
 
 Energy &emsp; &emsp; $ E = hf = h \dfrac{c}{\lambda} = \hbar \ \omega $
 
+</br><hr></br>
+
 ## Wave Function
 Consider the wave function of a particle to be $ \psi $ containing information of all the measurable properties of the particle.
 
@@ -33,8 +35,30 @@ Probability Density (of finding particle between $ x  $ and $ x + \delta x$) = $
 $ \therefore $ If $ \psi(x, t) $ is real, $$ P(a < p_{x} < b) = \int_{x=a}^{x=b} |\psi^{2}| dx $$
 
 ### Wave Operators
-We can operate on the wave-function to determine the attributes of the wave-particle.
+We can operate on the wave-function $ \psi(x, t) $ to determine the attributes of the wave-particle.
 
+#### Momentum
+$$ \hat{p_{x}} = \dfrac{\hbar}{i} \dfrac{\partial}{\partial x} $$
+In the 2D $ \psi(x, y, t) $ or 3D $ \psi(x, y, z, t) $ case, the operator is a vector operator (using the grad operator $ \nabla $ ):
+$$ \underline{\hat{p}} = \begin{bmatrix} \hat{p_{x}} \\
+           \hat{p_{y}} \\
+           \hat{p_{z}}
+         \end{bmatrix}
+= \dfrac{\hbar}{i} \nabla $$
 
+#### Energy
+$$ \hat{E} = - \dfrac{\hbar}{i} \dfrac{\partial}{\partial t} $$
 
+In each case, applying the operator $ \hat{\Theta} $ returns the attribute $ \Theta $ itself multiplied by the wave-function $ \psi $:
+$$ \hat{\Theta} ( \psi ) = \Theta \psi $$
 
+#### Example:
+Let $ \psi $ be a plane wave $ \psi = Ae^{i(k x - \omega t)}$:
+$$ \therefore \hat{p_{x}} ( \psi ) = \dfrac{\hbar}{i} \dfrac{\partial \psi}{\partial x} = ik \dfrac{\hbar}{i} Ae^{i(k x - \omega t)} = k \hbar \ \psi \qquad \therefore p_{x} = k \hbar $$
+$$ \therefore \hat{E} ( \psi ) = - \dfrac{\hbar}{i} \dfrac{\partial \psi}{\partial t} = -i\omega \dfrac{\hbar}{i} Ae^{i(k x - \omega t)} = \omega \hbar \ \psi \qquad \therefore E = \omega \hbar $$
+
+</br><hr></br>
+
+## Schrodinger's Equation
+
+Essentially the Hamiltonian Operator (ie. Total Energy)
