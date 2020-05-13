@@ -13,6 +13,8 @@ Gradient of the smoothed image = Gradient of the convolution of a gaussian filte
 
 We are trying to find where the $ \nabla S $ equals 0 (ie. is a minimum, ie. detected edges).
 
+</br>
+
 ### 1D Edge Detection
 ### $$ s^{'}(x) = g^{'}_{\sigma}(x) * i(x) $$ 
 **Convolution Derivative Theorem:**
@@ -23,6 +25,7 @@ $$ \therefore s^{'}(x) = g^{'}_{\sigma}(x) * i(x) $$
 $$ \text{Also} \ \therefore s^{''}(x) = g^{''}_{\sigma}(x) * i(x) $$
 A significant computation speedup!!!
 
+</br>
 
 ### 2D Edge Detection
 ### $$ \nabla S = \nabla G_{\sigma} * I $$
