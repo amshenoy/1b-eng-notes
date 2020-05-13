@@ -1,4 +1,4 @@
-# Image Processing
+# Computer Vision
 
 ## Edge Detection
 ### $$ \nabla S = \nabla G_{\sigma} * I $$
@@ -30,7 +30,12 @@ A significant computation speedup!!!
 ### 2D Edge Detection
 ### $$ \nabla S = \nabla G_{\sigma} * I $$
 
-$$ S(x, y) = G_{\sigma}(x, y) * I(x, y) = \iint G_{\sigma}(u, v) I(x-u, y-v) \ du \ dv $$
+</br>
+
+$$ S(x, y) = G_{\sigma}(x, y) * I(x, y) \\
+= \iint G_{\sigma}(u, v) I(x-u, y-v) \ du \ dv \qquad \small\text{(Continuous)} \\
+= \sum_{u=-n}^{n}\sum_{v=-n}^{n} G_{\sigma}(u, v) I(x-u, y-v) \qquad \small\text{(Discrete)}
+$$
 
 A significant computation speedup from using the 1D gaussian functions:
 $$ G_{\sigma}(x, y) * I(x, y) = g_{\sigma}(x) * ( g_{\sigma}(y) * I(x, y) ) $$
@@ -38,5 +43,30 @@ $$ G_{\sigma}(x, y) * I(x, y) = g_{\sigma}(x) * ( g_{\sigma}(y) * I(x, y) ) $$
 </br>
 
 ##### Note*: $ \dfrac{\partial S}{\partial x} = \dfrac{S(x+1, y) - S(x-1, y)}{2} = \text{ Rows of } S(x, y) * [\frac{1}{2},0,-\frac{1}{2}]$
+
+## Corner Detection
+
+## Blob Detection
+An instance of the use of scale space for detecting different sized blobs.
+Convolution of the image with a gaussian blob of kernel size.
+
+
+## SIFT
+
+Using SIFT
+### Keypoint Detection
+Blob centres give keypoint image locations and the blob scale can be used to normalise the scale of the image feature.
+
+#### Image Pyramid
+ 
+
+### Scale Space
+
+#### Difference of Gaussians
+
+### Orientation Detection
+ Histogram of Gradients
+
+### Keypoint Descriptor
 
 
