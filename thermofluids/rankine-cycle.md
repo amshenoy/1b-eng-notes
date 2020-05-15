@@ -1,11 +1,11 @@
 # Rankine Cycle
 
-### Overview
+## Overview
 - **Steam Turbine** Cycle
 
 </br>
 
-### Working Fluids
+## Working Fluids
 $
 \text{Total Volume} \qquad V = V_{f} + V_{g} \\
 \qquad\qquad \qquad\qquad mv = m_{f}v_{f} + m_{g}v_{g} \\
@@ -16,14 +16,14 @@ $
 
 $
 
-### Cycle Processes
+## Cycle Processes
 
 State **1** - **Liquid** Saturated </br>
 State **3** - **Vapour** Saturated
 
 </br>
 
-#### Full Cycle with Reheat
+### Full Cycle with Reheat
 (Insert T-s Diagram here)
 
 **1-2** - Compression - **Pump** </br>
@@ -36,7 +36,7 @@ State **3** - **Vapour** Saturated
 
 </br>
 
-#### Simplified Cycle
+### Simplified Cycle
 (Insert 2nd T-s Diagram here)
 
 **1-2** - Compression - **Pump** &emsp; &emsp; &nbsp; &nbsp; (+W) </br>
@@ -46,24 +46,26 @@ State **3** - **Vapour** Saturated
 
 </br><hr></br>
 
-### Calculations
+## Calculations
 $ 
 
 \color{red}{v_{f1}} = \small \color{blue}{H_{2}O-\text{SAT-Table}_{v}\big[f\big]\Big(P_{1}\Big)}
-
 \qquad \qquad
-
 \color{red}{h_{1}} = \small \color{blue}{ H_{2}O-\text{SAT-Table}_{h}\big[f\big]\Big(P_{1}\Big) }
+$
 
-\\
-
-\text{Pump} \qquad w_{p}  \approx (P_{2}-P_{1})\color{red}{v_{f1}} \times \dfrac{1}{\eta_{c}} \quad ( \small \text{Water Incompressible} ) \qquad \Big(= h_{12} = h_{2} - \color{red}{h_{1}} \Big) \\
+### $
+\text{Pump} \qquad w_{p}  \approx (P_{2}-P_{1})\color{red}{v_{f1}} \times \dfrac{1}{\eta_{c}} \quad ( \small \text{Water Incompressible} )
 $
 </br></br>
 $
+\Big( w_{p} = h_{12} = h_{2} - \color{red}{h_{1}} \Big) \\
 \therefore \color{purple}{h_{2}} = \color{red}{h_{1}} + w_{p} = \color{red}{h_{1}} + (P_{2} - P_{1})\color{red}{v_{f1}} \times \dfrac{1}{\eta_{c}}
-\\
-\text{Boiler} \qquad \qquad q_{23} = \color{red}{h_{3}} - \color{purple}{h_{2}} \qquad \qquad \qquad \qquad \color{red}{h_{3}} = \small \color{blue}{H_{2}O-\text{SAT-Table}_{h}\big[g]\Big(P_{3}\Big)} \\
+\qquad \qquad
+\color{red}{h_{3}} = \small \color{blue}{H_{2}O-\text{SAT-Table}_{h}\big[g]\Big(P_{3}\Big)}
+$
+### $
+\text{Boiler} \qquad \qquad q_{23} = \color{red}{h_{3}} - \color{purple}{h_{2}}
 $
 </br></br>
 $
@@ -83,25 +85,29 @@ s_{4s} = \color{red}{s_{3}} = \small \color{blue}{H_{2}O-\text{SAT-Table}_{s}\bi
  \color{red}{h_{f}} = \small \color{blue}{H_{2}O-\text{SAT-Table}_{h}\big[f]\Big(P_{4}\Big)}
 \\
 \small \text{Note*: Alternatively get }\color{purple}{h_{4s}}\text{ from }\color{blue}{H_{2}O - \text{H-S-Diagram}(s=s_{3}, P=P_{3})}
-\\~\\
-\text{Turbine} \qquad \quad w_{t} = -h_{34} = \color{red}{h_{3}} - h_{4} = (\color{red}{h_{3}} - \color{purple}{h_{4s}}) \eta_{t} \\
+$
+
+### $
+\text{Turbine} \qquad \quad w_{t} = -h_{34} = \color{red}{h_{3}} - h_{4} = (\color{red}{h_{3}} - \color{purple}{h_{4s}}) \eta_{t}
 $
 </br></br>
 $
 \therefore \color{green}{h_{4}} = \color{red}{h_{3}} - w_{t} = \color{red}{h_{3}} - (\color{red}{h_{3}} - \color{purple}{h_{4s}}) \eta_{t}
-\\
-\text{Condenser} \qquad q_{41} = \color{red}{h_{1}} - \color{green}{h_{4}} \\
 $
-</br></br>
+### $
+\text{Condenser} \qquad q_{41} = \color{red}{h_{1}} - \color{green}{h_{4}} 
 $
-\text{Reheat Parameters} \\
+</br>
+
+### $ \text{Reheat Parameters} $
+$
 \color{red}{h_{5}} = \small \color{blue}{H_{2}O-\text{SAT-Table}_{h}\big[g]\Big(T_{5}\Big)}
 \\
 \color{green}{h_{6}} \text{ and } \color{purple}{h_{6s}} \Rightarrow \text{Same method as for } \color{green}{h_{4}} \text{ and } \color{purple}{h_{4s}}
 $
 </br></br>
 
-#### Efficiency
+### Efficiency
 
 $
 \eta_{\text{Thermal}} = \dfrac{w_{\text{net}}}{q_{\text{in}}} 
