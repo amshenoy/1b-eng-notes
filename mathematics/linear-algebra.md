@@ -19,7 +19,9 @@
 ### Left-Null Space
 
 
-## Eigen Decomposition (Revision)
+## Gram-Schmidt Orthognalisation
+
+## Eigen Decomposition
 
 
 ## LU Factorisation
