@@ -31,27 +31,12 @@ $
 **Thermal Equilibrium** - Rate of Electron-Hole Pair Formation = Rate of Electron-Hole Pair Recombination
 
 </br>
-
-## Fermi Function
-
-The Fermi function $ f(E) $ is a probability function (not probability density) which outputs the probability of an electron having energy $ E $ under thermal equilibrium. This will be useful for us to find the probability of an electron being in the valence or the conduction band.
-
-$$ \large f(E) = \dfrac{1}{1+e^{\frac{E-E_{f}}{kT}}} $$
-
-The function is dependent on the Fermi energy level $ E_{f} $:
-
-$$ E_{f} = \dfrac{E_{c} + E_{v}}{2} + \dfrac{1}{2} kT \ln \dfrac{N_{v}}{N_{c}} = \dfrac{E_{c} + E_{v}}{2} + \dfrac{3}{4} kT \ln \dfrac{m_{p}^{*}}{m_{n}^{*}} $$
-
-For an intrinsic semiconductor at thermal equilibrium, the Fermi energy level $ E_{f} $ is roughly the midpoint of $ E_{v} $ and $ E_{c} $:
-$$ E_{f} \approx \dfrac{E_{c} + E_{v}}{2} $$
-
-
-## Conductivity
-
+ 
+## Lattice Properties
 
 ### Intrinsic Carriers
 For **intrinsic** (undoped) semiconductors at **thermal equilibrium**, the following is true where $ n_{i} $ is a **temperature-dependent material property**:
-$$ n = p = n_{i} $$
+$$ \large n = p = n_{i} $$
 
 This essentially means that the "default" number of charge carriers at thermal equilibrium is the number of electrons in the conduction band which is equivalent to the number of holes in the valence band (since the electrons have moved from the valence band to the conduction band). 
 
@@ -156,4 +141,34 @@ $$ \rho = \dfrac{1}{ q \cdot (n \mu_{n} + p \mu_{p}) } $$
 
 Therefore the equation for **conductivity** is as follows:
 $$ \sigma = q \cdot (n \mu_{n} + p \mu_{p}) $$
+
+</br><hr></br>
+
+## Fermi Function
+
+The Fermi function $ f(E) $ is a probability function (not probability density) which outputs the probability of an electron having energy $ E $ under thermal equilibrium. $ k $ is the Boltzmann constant and $ T $ is the temperature. This will be useful for finding the probability of an electron being in the valence or the conduction band.
+
+$$ \large f(E) = \dfrac{1}{1+e^{\frac{E-E_{f}}{kT}}} $$
+
+The function is dependent on the Fermi energy level $ E_{f} $.
+
+### Intrinsic Fermi Level
+Consider the Fermi energy level of an intrinsic semconductor at thermal equilibrium to be $ E_{i} $ . This is roughly the midpoint of $ E_{v} $ and $ E_{c} $:
+
+$$ E_{i} \approx \dfrac{E_{c} + E_{v}}{2} $$
+
+But more explicitly:
+
+$$ E_{i} = \dfrac{E_{c} + E_{v}}{2} + \dfrac{1}{2} kT \ln \dfrac{N_{v}}{N_{c}} = \dfrac{E_{c} + E_{v}}{2} + \dfrac{3}{4} kT \ln \dfrac{m_{p}^{*}}{m_{n}^{*}} $$
+
+### Extrinsic Fermi Level (Non-Degenerate)
+Consider the Fermi energy level $ E_{f} $ of an extrinsic semconductor at thermal equilibrium to be $ E_{e} $:
+
+#### N-Type
+$$ E_{e} = E_{i} + kT \ln \dfrac{n}{n_{i}} $$
+
+#### P-Type
+$$ E_{e} = E_{i} - kT \ln \dfrac{p}{n_{i}} $$
+
+$ n $ and $ p $ can be found by solving the quadratic doping equations.
 
