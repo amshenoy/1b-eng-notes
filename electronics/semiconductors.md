@@ -34,7 +34,7 @@ $
 
 ## Fermi Function
 
-The Fermi function $ f(E) $ is a probability function (not PDF!) which outputs the probability of an electron having energy $ E $ under thermal equilibrium. This will be useful for us to find the probability of an electron being in the valence or the conduction band.
+The Fermi function $ f(E) $ is a probability function (not probability density) which outputs the probability of an electron having energy $ E $ under thermal equilibrium. This will be useful for us to find the probability of an electron being in the valence or the conduction band.
 
 $$ \large f(E) = \dfrac{1}{1+e^{\frac{E-E_{f}}{kT}}} $$
 
@@ -77,6 +77,7 @@ We can split this into useful dopant equations for one of p-type or n-type dopin
 
 </br>
 
+
 #### N-Type Dopant (Electron Donor)
 - Group 5 Element - Atom contributes an electron to the lattice
 
@@ -103,18 +104,33 @@ $ N_{A}^{-} = \small\text{Number of Ionised Acceptors} \ (cm^{-3})$
 
 ### Drift Velocity
 
-Here we assume a proportionality relationship for drift velocity. Note that the mechanism of transfer we are considering is "drift transport" which is different to other mechanisms of transport such as diffusion.
+Here we assume a proportionality relationship for drift velocity. 
 
 ### $$
 \underbrace{v_{d}}_{\text{Drift Velocity}} = \underbrace{\mu}_{  \small\text{Const. of Proportionality} \\ \qquad \text{"Mobility"} } \quad \underbrace{\xi}_{\textbf{Low} \ \text{Electric Field}}
 $$
 
+##### Note*: The mechanism of transport we are considering is "drift transport" which is different to other mechanisms of transport such as diffusion.
+##### Note*: Electric field must be low because at high electric fields, velocity saturation occurs due to optical phonon scattering or the Gunn effect (inter-valley electron transfer).
 
-F=ma is not directly applicable as electrons collide with atoms in the lattice. However we can consider the electron to have expected mass $ m^{*} $, the mean collision time to be $ t_{col} $ with velocity $ v $ moving in an electric field with electric field strength $ \xi $:
+</br>
+
+Now we need another equation that connects drift velocity to the electric field so that we can find some value for mobility. F=ma is not directly applicable as electrons collide with atoms in the lattice. However we can consider the electron to have effective mass $ m^{*} $, the mean collision time to be $ t_{col} $ with velocity $ v $ moving in an electric field with electric field strength $ \xi $:
+
+$$ \large \dfrac{m_{n}^{*} \ v_{d}}{t_{col}} = q \ \xi $$ 
+
+We can now rearrange for the mobility:
+$$ \therefore \mu_{n} = \dfrac{q \ t_{col}}{m_{n}^{*}} $$
+
+##### Note*: This is also applicable to holes and we can derive the same equations for holes. You must consider holes to be the movement of positive charge in the opposite direction to the direction of the electrons.
+
+##### Note*: We avoid the use of E for electric field (electric field strength) as E also represents energy
+
+</br>
+
+### Current Density
+
+Upon the application of a potential difference to a material, the gradient of the energy bands increases (imagine the slanting of the energy band downwards towards the +ve terminal). The electrons in both the conduction and the valence band are attracted towards the positive terminal. The electrons in the conduction band can freely move hence causing current flow however the electrons in the valence band are confined to fill the available holes in the valence band and hence the electrons in the valence band move into the vacant holes towards the positive terminal.
 
 
-
-
-
-##### Note*: (avoiding the use of E for electric field strength as E also represents energy)
 
