@@ -128,9 +128,32 @@ $$ \therefore \mu_{n} = \dfrac{q \ t_{col}}{m_{n}^{*}} $$
 
 </br>
 
-### Current Density
+### Current Flow
 
-Upon the application of a potential difference to a material, the gradient of the energy bands increases (imagine the slanting of the energy band downwards towards the +ve terminal). The electrons in both the conduction and the valence band are attracted towards the positive terminal. The electrons in the conduction band can freely move hence causing current flow however the electrons in the valence band are confined to fill the available holes in the valence band and hence the electrons in the valence band move into the vacant holes towards the positive terminal.
+Upon the application of a potential difference to a material, the gradient of the energy bands increases (imagine the slanting of the energy band downwards towards the +ve terminal).
 
+The electrons in both the conduction and the valence band are attracted towards the positive terminal.
 
+The electrons in the conduction band can freely move hence causing current flow.
+However the electrons in the valence band are confined to fill the available holes in the valence band and hence fill vacant holes moving towards the positive terminal. Relatively, this also looks like the holes are moving towards the negative terminal and therefore holes are positive charge carriers.
+
+$$ J_{\small\text{Drift}} = q \cdot (v_{d} \cdot n_{T}) $$
+
+$$ \large J_{\small\text{Drift}} = q \cdot (n \mu_{n} + p \mu_{p}) \xi = q \cdot (n \mu_{n} + p \mu_{p}) \dfrac{dV}{dx} $$
+
+$$ I_{\small\text{Drift}} = J_{\small\text{Drift}} A $$
+By integration and knowing that no terms are dependent on the applied potential difference $ V $ :
+$$ \int_{0}^{L} I_{\small\text{Drift}} \ dx = \int_{0}^{V} q \cdot (n \mu_{n} + p \mu_{p}) \ dV \ \cdot \ A $$
+
+$$ I_{\small\text{Drift}} L = A \cdot q \cdot (n \mu_{n} + p \mu_{p}) \cdot V $$
+
+Rearranging the equation into **Ohm's law**:
+
+$$ \large \dfrac{V}{I_{\small\text{Drift}}} = \dfrac{1}{ q \cdot (n \mu_{n} + p \mu_{p}) } \dfrac{L}{A} $$
+
+We can actually see that this also links to the **resistivity** law $ R = \rho \dfrac{L}{A}$ where:
+$$ \rho = \dfrac{1}{ q \cdot (n \mu_{n} + p \mu_{p}) } $$
+
+Therefore the equation for **conductivity** is as follows:
+$$ \sigma = q \cdot (n \mu_{n} + p \mu_{p}) $$
 
