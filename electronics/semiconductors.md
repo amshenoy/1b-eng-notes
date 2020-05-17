@@ -181,7 +181,7 @@ $$ \large n = \int_{E_{c}}^{\infty} g_{c}(E) e^{-\frac{E-E_{f}}{kT}} dE = N_{c} 
 
 $$ \large p = \int_{-\infty}^{E_{v}} g_{v}(E) e^{-\frac{E_{f}-E}{kT}} dE = N_{v} \ e^{-\frac{E_{f}-E_{v}}{kT}} $$
 
-where $ N_{c} $ is the density of states in the conduction band and $ N_{v} $ is the density of states in the valence band:
+where $ N_{c} $ is the effective density of states in the conduction band and $ N_{v} $ is the effective density of states in the valence band:
 
 $$ N_{c} = 2 \Big( \dfrac{ 2 \pi \ m_{n}^{*} \ k T }{h^{2}} \Big) ^ \dfrac{3}{2} $$
 $$ N_{v} = 2 \Big( \dfrac{ 2 \pi \ m_{p}^{*} \ k T }{h^{2}} \Big) ^ \dfrac{3}{2} $$
