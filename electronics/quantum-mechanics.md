@@ -148,7 +148,8 @@ Any exploding (tending to $ \infty $) terms can be neglected as the wave functio
 
 For $ E > V_{0} $, there are no exploding terms and we have already found our solutions.
 
-However for $ E < V_{0} $, there are exploding terms that need to be corrected.
+However for $ E < V_{0} $, there are exploding terms that need to be corrected. 
+##### Note*: The result for $ E < V_{0} $ is significant as this only works for wave-duality and not for classical mechanics. This process is known as tunneling.
 
 For $ x \leq 0 $, as $ \beta < 0 $: 
 $$ \psi_{1} = D e^{- \beta x } $$
