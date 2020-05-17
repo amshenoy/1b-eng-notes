@@ -142,6 +142,18 @@ $$ \rho = \dfrac{1}{ q \cdot (n \mu_{n} + p \mu_{p}) } $$
 Therefore the equation for **conductivity** is as follows:
 $$ \sigma = q \cdot (n \mu_{n} + p \mu_{p}) $$
 
+</br>
+
+### Electric Potential
+
+#### 1D Poisson's Equation
+$$ - \dfrac{d^{2}V}{dx^{2}} = \dfrac{d\xi}{\dx} = \dfrac{\rho}{\epsilon} $$
+
+Substitute charge concentration $ \rho $ with the respective amount of charge concentration in the semiconductor. 
+$$ \large - \dfrac{d^{2}V}{dx^{2}} = \dfrac{d\xi}{\dx} = \dfrac{q( (p + N_{D}^{+}) - (n + N_{A}^{-}) )}{\epsilon} $$
+
+Solve for the potential by integration and applying boundary conditions.
+
 </br><hr></br>
 
 ## Fermi Function
