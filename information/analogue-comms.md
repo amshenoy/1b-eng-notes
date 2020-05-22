@@ -65,8 +65,9 @@ $$
 $$
 
 ### Quantisation Noise
+The difference between an input value and its quantized value (such as round-off error) is referred to as quantization error. A device or algorithmic function that performs quantization is called a quantizer. An analog-to-digital converter is an example of a quantizer.
 
-
-
+We can assume that the probability density function for the quantisation error at a specific voltage $ V $ is uniformly distributed between $ \pm $ half the voltage resolution where the voltage resolution is $ \Delta V $.  
+$$ QN \sim U(-\dfrac{\Delta V}{2}, \dfrac{\Delta V}{2}) $$
 
 
