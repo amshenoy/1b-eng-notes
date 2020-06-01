@@ -6,7 +6,7 @@ $ Z_{p} \qquad \small \text{Plastic Section Modulus} $
 $$ M_{p} = \sigma_{} Z_{p} $$
 $ m_{p} \qquad \small \text{Plastic Moment Capacity (Plastic Moment per unit length of yield-line/slip-line)}$ 
 
-## Lower-Bound Theory
+## Upper-Bound Theory
 
 ### Beams & Frames (Plastic Analysis)
 
@@ -25,4 +25,4 @@ $$ E.D = \sum_{i} m_{p \ i} \ l_{i} \ \theta{i} $$
 
 ### Materials (Slip-Line Analysis)
 
-## Upper-Bound Theory
+## Lower-Bound Theory
