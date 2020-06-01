@@ -8,7 +8,7 @@ $ m_{p} \qquad \small \text{Plastic Moment Capacity (Plastic Moment per unit len
 
 ## Upper-Bound Theory
 
-### Beams & Frames (Plastic Analysis)
+### Beams & Frames (Hinge Analysis)
 
 $ \delta_{i} = l_{i} \theta_{i} $
 
