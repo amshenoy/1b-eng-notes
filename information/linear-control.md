@@ -54,8 +54,8 @@ Similarly the response of the system to the step function $ H(t) $ is therefore 
 
 
 __*Example:*__
-$$ F(s) = \frac{s+c}{(s+a)^{2} + b^{2}} $$
-*Zeros:* $ s = -c \quad (s+c \to 0)$ $ \qquad \qquad $ *Poles:* $ s = -a \pm ib \quad ((s+a)^{2} + b^{2} \to 0) $
+$$ F(s) = \frac{s-c}{(s-a)^{2} + b^{2}} $$
+*Zeros:* $ s = c \quad (s-c = 0)$ $ \qquad \qquad $ *Poles:* $ s = a \pm ib \quad ((s-a)^{2} + b^{2} = 0) $
 
 
 #### Pole-Zero Plot
