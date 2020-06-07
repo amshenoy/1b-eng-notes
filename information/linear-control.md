@@ -35,12 +35,22 @@ Consider an input signal x(t) into a system $ \mathcal{H} $ such that the output
 $$ \mathcal{H} \{ \alpha \ x_{1}(t) + \beta \ x_{2}(t) \} = \alpha \ \mathcal{H} \{ x_{1}(t) \} + \beta \ \mathcal{H} \{ x_{2}(t) \} = \alpha \ y_{1}(t) + \beta \ y_{2}(t) $$
 
 
+
+### System Response
+
+Consider a LTI system that has the function $ g(t) $ meaning that the Laplace transform of the system time-domain function is the system transfer function $ \mathcal{L} \{g(t)\} = G(s) $ .
+
+This is also the impulse response of the system! 
+$ \mathcal{L} \{\delta(t) * g(t)\} = \mathcal{L} \{\delta(t)\} \ \mathcal{L} \{g(t)\} = 1 \cdot G(s) = G(s) $ 
+
+Similarly the response of the system to the step function $ H(t) $ is therefore $ \mathcal{L} \{H(t)\} \ \mathcal{L} \{g(t)\} = \dfrac{1}{s} G(s)  $
+
 ### System Stability
 
 #### Poles and Zeros
-**Zeros** - Values of $ s $ for system transfer function $ \to 0 $ - [$ \text{Numerator} \to 0 $]
+**Zeros** - Values of $ s $ for system transfer function $ H(s) \to 0 $ - [$ \text{Numerator} \to 0 $]
 
-**Poles** - Values of $ s $ for system transfer function $ \to \infty $ - [$ \text{Denominator} \to 0 $]
+**Poles** - Values of $ s $ for system transfer function $ H(s) \to \infty $ - [$ \text{Denominator} \to 0 $]
 
 
 __*Example:*__
